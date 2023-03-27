@@ -40,10 +40,9 @@ public class Port extends Shape {
 		return r.contains(p);
 	}
 	
-	public void test() {
-		System.out.print(x1);
-		System.out.print(" ");
-		System.out.println(y1);
+	public void setPoint(Point p) {
+		this.x1 = p.x;
+		this.y1 = p.y;
 	}
 
 	@Override
