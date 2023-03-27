@@ -1,5 +1,6 @@
 package View;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -44,6 +45,9 @@ public class Canva extends JPanel {
 		}
 		
 		if(selectedArea != null) {
+			g.setColor(new Color(220, 220, 220, 64));
+			g.fillRect(selectedArea.x, selectedArea.y, selectedArea.width, selectedArea.height);
+			g.setColor(Color.black);
 			g.drawRect(selectedArea.x, selectedArea.y, selectedArea.width, selectedArea.height);
 		}
 	}

@@ -54,10 +54,11 @@ public class Group extends BasicObject {
 	}
 
 	public void paintObject(Graphics g) {
-
-		g.setColor(new Color(220, 220, 220, 128));
+//		rgb(201, 238, 255) bonds color
+//		rgb(47, 88, 205) rectangle color
+		g.setColor(new Color(201, 238, 255, 128));
 		g.fillRect(x1 - WIDTH / 2, y1 - HEIGHT / 2, WIDTH, HEIGHT);
-		g.setColor(Color.black);
+		g.setColor(new Color(47, 88, 205, 255));
 		g.drawRect(x1 - WIDTH / 2, y1 - HEIGHT / 2, WIDTH, HEIGHT);
 		for(int i = 0; i < shapeGroup.size(); i++) {
 			shapeGroup.get(i).draw(g);
